@@ -1,9 +1,17 @@
 import React from "react";
+import { Display } from "./Display";
+import Button from "./Button";
 
 const App = () => {
     return (
         <React.Fragment>
-            hello
+            {/* <Display /> */}
+
+            <Button color="red">
+                <p>signin</p>
+                <p>login</p>
+                <p>submit</p>
+            </Button>
         </React.Fragment>
     )
 }
@@ -11,3 +19,6 @@ const App = () => {
 
 export default App;
 
+
+//to manage satte in react
+//context API

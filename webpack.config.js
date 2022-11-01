@@ -16,12 +16,12 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     // notify webpack, files with side effects
-                    "side-effects": false,
-                    options: {
-                        presets: [
-                            ['es2015', { module: false }]
-                        ]
-                    }
+                    // "side-effects": false,
+                    // options: {
+                    //     presets: [
+                    //         ['es2015', { module: false }]
+                    //     ]
+                    // }
                 }
             },
         ]
