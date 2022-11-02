@@ -15,14 +15,26 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
-                    // notify webpack, files with side effects
+                    options: {
+                        presets: ["@babel/preset-env"]
+                    }
+
+
+                    // notify webpack, files with side effects (shift it to package.json if using babel 7)
                     // "side-effects": false,
+
+
+                    // below syntax is for babel 5
                     // options: {
                     //     presets: [
                     //         ['es2015', { module: false }]
                     //     ]
                     // }
                 }
+            },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
             },
         ]
     }
